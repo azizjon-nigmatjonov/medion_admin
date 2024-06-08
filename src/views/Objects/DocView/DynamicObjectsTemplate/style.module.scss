@@ -1,0 +1,44 @@
+//
+
+.docListTables {
+  padding: 0 30px;
+  margin: 20px 0 0 0;
+}
+
+.paper {
+  margin-top: 5px;
+  margin-right: 10px;
+  filter: drop-shadow(0px 0px 1px rgba(26, 32, 36, 0.035))
+    drop-shadow(0px 12px 24px rgba(91, 104, 113, 0.24));
+}
+
+.menu {
+  padding: 0;
+  width: 300px;
+
+  .menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border-bottom: 1px solid #d5dadd;
+  }
+
+  .menuBody {
+    .menuRow {
+      display: flex;
+      align-items: center;
+      padding: 7px 15px;
+      gap: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #d5dadd4c;
+      }
+    }
+  }
+}
+.menu_body {
+  height: 150px;
+  overflow: scroll;
+}

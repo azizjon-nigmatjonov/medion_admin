@@ -1,0 +1,25 @@
+@use "/src/scss/colors";
+
+.paper {
+  margin-top: 10px;
+  width: 220px;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.filterWrapper {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filterIcon {
+  font-size: 20px !important;
+  color: #6E7C87;
+  // transform: translateY(10px);
+  
+}
+

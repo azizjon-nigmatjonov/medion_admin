@@ -1,0 +1,41 @@
+
+@use '/src/scss/colors';
+
+.selector {
+  display: flex;
+  // border-radius: 4px;
+  overflow: hidden;
+  // border: 1px solid #D5DADD;
+
+  .element {
+    width: 40px;
+    height: 48px;
+    min-width: 32px;
+    // background: #fff;
+    border-right: 1px solid #E5E9EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6E8BB7;
+    cursor: pointer;
+
+    &.active {
+      color: colors.$primary;
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+      border-top: 2px solid #0E73F6;
+
+    }
+
+    &:hover .icon {
+      transform: scale(1.2);
+      // border: 1px solid #D5DADD;
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,140 @@
+.CTableContainer {
+  width: 100%;
+  // padding: 0 16px;
+
+  .table {
+    width: 100%;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid #e5e9eb;
+    position: relative;
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+
+      td {
+        border-bottom: 1px solid #e5e9eb;
+        border-right: 1px solid #e5e9eb;
+        p,
+        span {
+          overflow: hidden;
+        }
+      }
+
+      // tr td:first-child {
+      //   border-left: none;
+      // }
+
+      tr:last-child td {
+        // border-bottom: none;
+      }
+    }
+  }
+}
+
+.CTableHead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+
+  th {
+    padding: 8px 16px;
+    min-height: 40px;
+  }
+
+  tr td {
+    border-bottom: 1px solid #e5e9eb !important;
+    font-weight: bold;
+  }
+
+  td {
+    white-space: nowrap;
+    min-height: 48px;
+  }
+}
+
+.CTableCell {
+  padding: 8px 16px;
+  line-height: 12px;
+
+  &.small {
+    height: 30px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &.medium {
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &.large {
+    height: 90px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &.buttonsCell {
+    padding: 6px 10px;
+    width: 60px;
+  }
+}
+
+.CTableRow {
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+  th {
+    padding: 8px 16px;
+  }
+
+  &:hover td {
+    background-color: rgba(#f5fbff, 1) !important;
+  }
+
+  &.amountRow {
+    background-color: #c0c0c03f;
+    font-weight: bold;
+
+    &:hover td {
+      background-color: #c0c0c03f !important;
+    }
+  }
+}
+
+.CTableBody {
+  z-index: 1;
+
+  th {
+    font-weight: 400;
+  }
+}
+
+th {
+  border: 0.5px solid #e5e9eb;
+  border-top: 0;
+  position: relative;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  cursor: col-resize;
+  user-select: none;
+  height: 80px !important;
+}
+.resizer:hover,
+.resizing {
+  border-right: 2px solid blue;
+}
+
+.resizable {
+  border: 1px solid gray;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}

@@ -1,0 +1,54 @@
+@use "/src/scss/colors";
+
+.createButton {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px dashed rgba(110, 139, 183, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    border-color: colors.$primary;
+  }
+
+  p {
+    color: colors.$primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+}
+
+.settingsBlock {
+  width: 450px;
+  min-width: 450px;
+  background-color: #fff;
+  border-left: 1px solid #E5E9EB;
+
+  .settingsBlockHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 16px;
+    border-bottom: 1px solid #E5E9EB;
+    border-top: 1px solid #E5E9EB;
+    background-color: #F6F8F9;;
+
+  }
+
+  .settingsBlockBody {
+    height: calc(100vh - 56px - 56px - 48px);
+    overflow: auto;
+  }
+
+  .settingsFooter {
+    padding: 8px;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+  }
+}

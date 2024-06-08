@@ -1,0 +1,41 @@
+@use "/src/scss/colors";
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  cursor: pointer;
+
+
+  .icon {
+    font-size: 18px;
+    color: #6E7C87;
+
+    &:first-child {
+      margin-bottom: -10px;
+    }
+
+    &.active {
+      color: colors.$primary;
+    }
+
+
+    //&.up {
+    //  // margin-bottom: -8px;
+    //  transform: translateY(5px);
+    //}
+    //
+    //&.down {
+    //  // margin-top: -7px;
+    //  transform: translateY(-4px);
+    //}
+  }
+
+}
+
+.nonVisible {
+  visibility: hidden;
+}

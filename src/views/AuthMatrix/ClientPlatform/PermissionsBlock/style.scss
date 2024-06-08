@@ -1,0 +1,28 @@
+.PermissionsBlock {
+
+  .rows-block {
+    height: calc(100vh - 96px - 56px);
+    overflow: auto;
+  }
+
+}
+
+.PermissionsRecursiveBlock {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+
+  &.active {
+    background-color: #EAF3FB;
+  }
+  
+  .title {
+    flex: 1;
+  }
+
+  .btns-block {
+    display: flex;
+    gap: 5px;
+  }
+}

@@ -1,0 +1,7 @@
+
+@use '/src/scss/colors';
+
+.label {
+  font-weight: bold;
+  color: colors.$primary-hover;
+}

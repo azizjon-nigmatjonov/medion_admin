@@ -1,0 +1,54 @@
+
+
+.StatusCard {
+  display: flex;
+  padding: 0 18px;
+  flex: 1;
+
+  .info-side {
+
+    .label {
+      font-weight: bold;
+      text-transform: uppercase;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 100%;
+    }
+
+    .value {
+
+      .number {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      .percent {
+        color: #6E8BB7;
+        margin-left: 6px;
+        font-weight: 600;
+      }
+    }
+
+  }
+
+}
+
+
+.StatusIcon {
+  width: 44px;
+  height: 44px;
+  background-color: #A23FEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 12px;
+
+  .icon {
+    color: #fff;
+    width: 28px;
+    height: 28px;
+  }
+}

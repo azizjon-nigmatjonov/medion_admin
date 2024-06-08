@@ -1,0 +1,19 @@
+
+
+.input {
+  min-width: 20px;
+  border: none;
+  outline: none;
+}
+
+
+.wrapper {
+  position: relative;
+}
+
+.hide {
+  position: absolute;
+  opacity: 0;
+  height: 0 !important;
+}
+

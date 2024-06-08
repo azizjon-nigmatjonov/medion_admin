@@ -1,0 +1,60 @@
+@use "/src/scss/colors";
+
+.addButton {
+  color: colors.$grey;
+}
+
+.paper {
+  margin-top: 5px;
+  margin-right: 10px;
+  filter: drop-shadow(0px 0px 1px rgba(26, 32, 36, 0.035))
+    drop-shadow(0px 12px 24px rgba(91, 104, 113, 0.24));
+}
+
+.menu {
+  padding: 0 !important;
+
+  .scrollBlocksss {
+    max-height: 350px;
+    overflow-y: auto;
+  }
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+    min-width: 211px;
+    gap: 8px;
+    background-color: #fff;
+    color: colors.$grey;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      background-color: colors.$primary;
+
+      &:hover {
+        background: colors.$primary;
+      }
+    }
+
+    .dragIcon {
+      cursor: grab;
+      color: rgb(33, 43, 54);
+    }
+
+    .itemText {
+      flex: 1;
+      color: rgb(33, 43, 54);
+    }
+
+    .active {
+      color: #fff;
+    }
+
+    &:hover {
+      background: #f6f8f9;
+    }
+  }
+}

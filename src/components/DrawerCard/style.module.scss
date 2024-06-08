@@ -1,0 +1,46 @@
+
+
+
+.verticalDrawer {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  
+
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    box-shadow: inset 0px -1px 0px #EEEEEE;
+
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .closeIcon {
+      font-size: 28px;
+    }
+  }
+
+  .body {
+    padding: 16px;
+    flex: 1;
+    overflow: auto;
+  
+  }
+
+  .footer {
+    padding: 16px;
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  
+}

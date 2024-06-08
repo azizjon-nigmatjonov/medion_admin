@@ -1,0 +1,216 @@
+@use "/src/scss/colors";
+
+.layout {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+  background-color: colors.$page-background;
+  position: relative;
+}
+
+.tabsBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e9eb;
+
+  .leftSide {
+    // max-width: ;
+    // background-color: red;
+    flex: 1;
+    display: flex;
+    overflow: auto;
+  }
+
+  .rightSide {
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tabComponent {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    padding: 7px;
+    cursor: pointer;
+    border-right: 1px solid #e5e9eb;
+    color: colors.$grey;
+    height: 49px;
+
+    &.addButton {
+      border: none;
+    }
+
+    &.active {
+      background: #f6f8f9;
+      color: colors.$primary;
+    }
+
+    &:hover {
+      background: #f6f8f9;
+      // border-bottom: 1px solid #E5E9EB;
+    }
+
+    .tabIcon {
+      margin-right: 4px;
+    }
+
+    .title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+//
+
+.noficationButton {
+  position: relative;
+
+  .notificationNum {
+    position: absolute;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    top: -5px;
+  }
+}
+.notifyMenu {
+  width: 240px;
+  min-height: 140px;
+
+  .notifyMenuContent {
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #869bb9;
+      border-radius: 10px;
+    }
+  }
+
+  h2 {
+    font-size: 16px;
+    padding-left: 10px;
+    // text-align: center;
+    margin-top: 10px;
+  }
+
+  .notifyMenuItem {
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px 5px 10px;
+    cursor: pointer;
+    color: #6e8bb7;
+    margin-top: 5px;
+  }
+}
+.notifyMenuItemEmpty {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: rgb(139, 155, 180);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  span {
+    margin-top: 10px;
+  }
+}
+.notifyMenuIndex {
+  color: #000;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.notifyTabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 20px;
+  margin-top: 10px;
+
+  .notifyTabsLinks {
+    border: 1px solid #eee;
+    border-bottom: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+
+    .notificationNum {
+      position: absolute;
+      right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      border-radius: 50%;
+      background: red;
+      color: #fff;
+      top: -5px;
+    }
+  }
+  .notifyTabsLinksActive {
+    border: 1px solid #eee;
+    border-bottom: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 122, 255);
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 999 !important;
+
+    .notificationNum {
+      position: absolute;
+      right: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 18px;
+      height: 18px;
+      font-size: 10px;
+      border-radius: 50%;
+      background: red;
+      color: #fff;
+      top: -5px;
+    }
+  }
+}
+
+.notifyPanels {
+  overflow: auto;
+  height: 160px;
+  width: 100%;
+}

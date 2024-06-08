@@ -1,0 +1,259 @@
+@use "/src/scss/colors";
+
+.page {
+  display: flex;
+}
+
+.sectionsBlock {
+  height: calc(100vh - 56px - 56px);
+  overflow: auto;
+  min-width: 350px;
+  width: 350px;
+  padding: 0px 8px 8px 0px;
+
+  .sectionCard {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    // min-width: 460px;
+
+    &.short {
+      min-width: 160px;
+    }
+
+    .sectionCardHeader {
+      box-shadow: inset 0px -1px 0px #e5e9eb;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background: #f6f8f9;
+
+      .sectionCardHeaderLeftSide {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+
+    .sectionCardBody {
+      padding: 16px;
+      display: flex;
+      gap: 60px;
+      width: 100%;
+
+      .sectionCardRow {
+        background-color: #fff;
+        cursor: grab;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .deleteButton {
+          transform: translateY(10px);
+        }
+      }
+    }
+  }
+
+  .sectionCreateCard {
+    padding: 16px;
+
+    .sectionCreateButton {
+      width: 100%;
+      border-radius: 6px;
+      border: 1px dashed rgba(110, 139, 183, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      font-size: 16px;
+      line-height: 24px;
+      color: colors.$primary;
+      cursor: pointer;
+      font-weight: 500;
+
+      &:hover {
+        border-color: colors.$primary;
+      }
+    }
+  }
+}
+
+.relationsBlock {
+  overflow: hidden;
+  padding: 0px 8px 8px 8px;
+  flex: 1;
+
+  .cardHeader {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    gap: 10px;
+    border-bottom: 1px solid #e5e9eb;
+    min-height: 55px;
+    overflow-x: auto;
+
+    .tabList {
+      // max-width: 750px;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+
+      .tab {
+        padding: 8px 12px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+        cursor: grab;
+        color: #6e8bb7;
+
+        &.active {
+          color: colors.$primary;
+
+          .tabLabelInput {
+            color: colors.$primary;
+          }
+        }
+      }
+    }
+  }
+
+  .cardBody {
+    padding: 8px;
+  }
+}
+
+.settingsBlock {
+  width: 475px;
+  min-width: 450px;
+  background-color: #fff;
+  border-left: 1px solid #e5e9eb;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+
+  .settingsBlockHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e9eb;
+    border-top: 1px solid #e5e9eb;
+    background-color: #f6f8f9;
+  }
+
+  .settingsBlockBody {
+    height: calc(100vh);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.fieldsBlock {
+  height: calc(100vh);
+  overflow: auto;
+  padding: 8px;
+
+  .sectionFieldRow {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1px dashed colors.$grey;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: grab;
+    background-color: #fff;
+
+    &.relation {
+      width: fit-content;
+    }
+  }
+}
+
+.settingsFooter {
+  padding: 8px;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.draggableRow {
+  border-bottom: 1px solid #e5e9eb;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+
+  .dragButton {
+    cursor: grab;
+  }
+
+  .label {
+    flex: 1;
+  }
+}
+
+// <-- Summary Section --> //
+.summary_section_layer {
+  min-height: 10px !important;
+}
+
+.summarySection {
+  min-height: 20px;
+  min-width: 100%;
+  // max-width: 470px;
+  border-radius: 4px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background: #fff;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  // margin: 8px 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .field_summary {
+    width: 238px;
+    height: 100% !important;
+    display: flex;
+    overflow: hidden;
+    border-radius: 4px;
+    // gap: 5px;
+    background: #fff;
+  }
+  .field_summary_item {
+    width: 238px;
+    height: 80px;
+    max-height: 130px !important;
+    // max-height: 140px;
+    margin-top: 8px;
+    background: #fff;
+    padding: 0px 10px 16px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+
+    input {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      color: #9aa6ac;
+      background: none;
+      text-transform: initial;
+      width: 100%;
+      border: none !important;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.moveable1 .moveable-line {
+  display: none;
+}
+
+.moveable1 .moveable-control-box {
+  z-index: 0 !important;
+}
+
+.moveable1 .moveable-control {
+  width: 15px !important;
+  min-width: 15px !important;
+  height: 49px !important;
+  left: 0px !important;
+  margin-top: -25px !important;
+  border: none !important;
+  background-color: #cfd2cf !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    background-color: #7f8487 !important;
+  }
+
+  &::after {
+    content: url("../../../assets/icons/drag-indicator.svg");
+    transform: translateY(2px);
+    fill: #fff;
+  }
+
+  &.moveable-w {
+    border-radius: 5px 0 0 5px !important;
+    margin-left: 0 !important;
+    z-index: 1;
+  }
+
+  &.moveable-e {
+    border-radius: 0 5px 5px 0 !important;
+    // transform: translateY(312px) !important;
+  }
+}

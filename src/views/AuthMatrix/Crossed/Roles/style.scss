@@ -1,0 +1,32 @@
+
+
+.RolesForm {
+  display: flex;
+  gap: 30px;
+
+  .form-card {
+    flex: 1;
+    max-width: 50%;
+    // width: 50%;
+  }
+}
+
+.PermissionsRecursiveBlock {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+
+  &.active {
+    background-color: #EAF3FB;
+  }
+  
+  .title {
+    flex: 1;
+  }
+
+  .btns-block {
+    display: flex;
+    gap: 5px;
+  }
+}

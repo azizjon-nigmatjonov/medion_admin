@@ -1,0 +1,226 @@
+@use "/src/scss/colors";
+
+.page {
+  display: flex;
+  padding: 8px;
+  gap: 8px;
+  overflow: auto;
+
+  .collapseBlock {
+    width: 40px;
+    height: calc(100vh - 90px - 56px - 38px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .collapseButton {
+      transform: rotate(-90deg) translateY(-17px);
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      gap: 8px;
+      transition-duration: .3s;
+    }
+
+    &:hover {
+      .collapseButton {
+        color: colors.$primary;
+      }
+    }
+  }
+
+  .fieldCard {
+    width: 400px;
+    border-radius: 6px;
+    z-index: 2;
+    margin-bottom: 20px;
+
+    .fieldCardHeader {
+      box-shadow: inset 0px -1px 0px #e5e9eb;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .fieldsWrapperBlock {
+      padding: 8px;
+    }
+  }
+
+  .fieldsBlock {
+    min-width: 400px;
+    height: calc(100vh - 90px - 56px - 38px);
+    overflow: auto;
+
+    .fieldRow {
+      width: 100%;
+      padding: 8px 16px;
+      border: 1px dashed colors.$primary;
+      border-radius: 6px;
+      margin: 10px 0;
+      cursor: grab;
+      background-color: #fff;
+
+      .fieldRowLabel {
+        font-weight: 500px;
+      }
+    }
+  }
+
+  .sectionsBlock {
+    height: calc(100vh - 90px - 56px - 38px);
+    overflow: auto;
+    min-width: 390px;
+
+    .sectionCard {
+      border-radius: 6px;
+      margin-bottom: 15px;
+      // min-width: 460px;
+
+      &.short {
+        min-width: 160px;
+      }
+
+      .sectionCardHeader {
+        box-shadow: inset 0px -1px 0px #e5e9eb;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // background: #f6f8f9;
+
+        .sectionCardHeaderLeftSide {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+
+      .sectionCardBody {
+        padding: 16px;
+        display: flex;
+        gap: 60px;
+        width: 100%;
+
+        .sectionCardRow {
+          background-color: #fff;
+          cursor: grab;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .deleteButton {
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+
+    .sectionCreateCard {
+      padding: 16px;
+
+      .sectionCreateButton {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px dashed rgba(110, 139, 183, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: colors.$primary;
+        cursor: pointer;
+        font-weight: 500;
+
+        &:hover {
+          border-color: colors.$primary;
+        }
+      }
+    }
+  }
+
+  .relationsBlock {
+    // min-width: 800px;
+    // width: 800px;
+    flex: 1;
+
+    .cardHeader {
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      gap: 10px;
+      border-bottom: 1px solid #e5e9eb;
+      min-height: 55px;
+
+      .tabList {
+        max-width: 750px;
+        overflow: auto;
+        display: flex;
+
+        .tab {
+          padding: 8px 12px;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          cursor: grab;
+          color: #6e8bb7;
+
+          &.active {
+            color: colors.$primary;
+
+            .tabLabelInput {
+              color: colors.$primary;
+            }
+          }
+        }
+      }
+    }
+
+    .cardBody {
+      padding: 8px;
+    }
+  }
+}
+
+.sectionFieldRow {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px dashed colors.$grey;
+  border-radius: 6px;
+  margin: 10px 0;
+  cursor: grab;
+  background-color: #fff;
+}
+
+.paper {
+  margin-top: 0px;
+}
+
+.menu {
+  padding: 0 !important;
+
+  .menuItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px 8px 16px;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+    min-width: 300px;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: colors.$hover-silver;
+    }
+  }
+}
+
+
+.layoutTabsBlock {
+  background-color: #fff;
+}

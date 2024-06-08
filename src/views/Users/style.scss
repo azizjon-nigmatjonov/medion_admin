@@ -1,0 +1,14 @@
+
+
+.UsersForm {
+  max-width: 900px;
+
+  .content {
+    display: flex;
+    gap: 100px;
+
+    .side {
+      flex: 1;
+    }
+  }
+}

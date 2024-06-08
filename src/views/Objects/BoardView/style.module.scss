@@ -1,0 +1,156 @@
+@use "/src/scss/colors";
+
+.wrapper {
+  display: flex;
+  padding: 0 0px;
+  .filters {
+    border-radius: 6px;
+    padding: 16px;
+    background: #fff;
+    height: calc(100vh - 100px);
+
+    p {
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+
+  .board {
+    display: flex;
+    padding: 0 16px;
+    gap: 24px;
+    width: 100%;
+    overflow: auto;
+
+    .column {
+      width: 300px;
+
+      .columnHeaderBlock {
+        background-color: #fff;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+
+        .title {
+          flex: 1;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          line-height: 24px;
+          font-weight: 700;
+        }
+
+        .rightSide {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          .counter {
+            width: 24px;
+            height: 24px;
+            font-size: 14px;
+            background-color: #003175;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 12px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: 0px 0px 41px -6px rgba(34, 60, 80, 0.2);
+      }
+    }
+  }
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid rgb(221, 217, 217);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.menuBar {
+  width: 180px;
+}
+.settings {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px 0;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.element {
+  border: 1px solid #e5e9eb;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  &.active {
+    color: colors.$primary;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #0e73f6;
+  }
+}
+
+.template {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.lineControl {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 10px 5px 10px;
+  cursor: pointer;
+
+  span {
+    margin-left: 10px;
+  }
+
+  .lineControl_item {
+    display: flex;
+    width: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+}

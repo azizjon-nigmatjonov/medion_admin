@@ -1,0 +1,26 @@
+
+@use "/src/scss/colors";
+
+.sidebar {
+  height: calc(100vh - 130px);
+  width: 260px;
+  box-shadow: inset -1px 0px 0px #E5E9EB;
+  padding: 10px;
+
+  .element {
+    display: flex;
+    align-items: center;
+    padding: 6px 6px 6px 12px;
+    gap: 8px;
+    color: #6E8BB7;
+    line-height: 24px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+  
+    &.active {
+      background-color: colors.$primary;
+      color: #fff;
+    }
+    
+  }
+}

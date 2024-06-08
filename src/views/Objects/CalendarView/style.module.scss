@@ -1,0 +1,267 @@
+@use "/src/scss/colors";
+
+.calendar {
+  display: flex;
+  align-content: center;
+  max-height: calc(100vh - 100px);
+  overflow: auto;
+  background-color: #fff;
+}
+
+.timesColumn {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+
+  .timeRow {
+    min-width: max-content;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    box-shadow: inset -1px -1px 0px #e5e9eb;
+    background-color: #fff;
+    font-size: 10px;
+    
+    &:first-child {
+      position: sticky;
+      top: 0px;
+    }
+    &:nth-child(2) {
+      position: sticky;
+      top: 40px;
+    }
+    &:nth-child(3) {
+      position: sticky;
+      top: 80px;
+      z-index: 9999 !important;
+    }
+  }
+}
+
+.dateBlock {
+  min-width: 130px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  box-shadow: inset -1px -1px 0px #e5e9eb;
+  background-color: #fff;
+  z-index: 9999;
+  font-size: 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.block {
+  width: 100%;
+}
+
+.blockElement {
+  width: 100%;
+  box-shadow: inset -1px -1px 0px #e5e9eb;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //white-space: nowrap;
+  padding: 0 10px;
+  font-size: 10px;
+  text-align: center;
+  position: sticky;
+  top: 40px;
+  background-color: #fff;
+  z-index: 9999 !important;
+
+
+  &.last {
+    min-width: 130px;
+    position: sticky;
+    top: 80px;
+    background-color: #fff;
+    z-index: 99;
+    height:40px;
+  }
+  &.before {
+    // height: 40x;
+    position: sticky;
+    top: 40px;
+    background-color: #fff;
+    z-index: 99;
+  }
+}
+
+.timeBlock {
+  width: 130px;
+  box-shadow: inset -1px -1px 0px #e5e9eb;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .addButton {
+    display: none;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      color: #007aff;
+    }
+  }
+
+  .timePlaceholder {
+    opacity: 0.4;
+    font-size: 10px;
+  }
+
+  &:hover {
+    .addButton {
+      display: inline-flex;
+    }
+
+    .timePlaceholder {
+      display: none;
+    }
+  }
+
+  &.disabled {
+    background-color: rgba(223, 223, 223, 0.276);
+
+    &:hover {
+      .addButton {
+        display: none;
+      }
+
+      .timePlaceholder {
+        display: block;
+      }
+    }
+  }
+}
+
+//  -------------------
+
+.objectColumn {
+  position: relative;
+  .infoBlockWrapper {
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    position: absolute;
+
+    .infoCard {
+      padding: 5px;
+      // padding-top: 20px;
+      overflow: hidden;
+      height: 70px;
+      cursor: pointer;
+      transition-duration: 0.3s;
+    }
+
+    .infoBlock {
+      &.singleLine {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.time {
+  color: #84919a;
+  font-size: 12px;
+}
+
+.menu {
+  padding: 8px;
+  max-width: 200px;
+}
+
+.popupHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linkIcon {
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: colors.$primary;
+  }
+}
+
+.oneElement {
+  .objectColumn {
+    .timeBlock {
+      width: 100%;
+    }
+  }
+}
+
+.moreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border: 1px solid rgb(221, 217, 217);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.menuBar {
+  width: 180px;
+}
+.settings {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 10px 0;
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.element {
+  border: 1px solid #e5e9eb;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  &.active {
+    color: colors.$primary;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 2px solid #0e73f6;
+  }
+}
+
+.template {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  span {
+    margin-left: 10px;
+  }
+}

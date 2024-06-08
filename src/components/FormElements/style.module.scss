@@ -1,0 +1,94 @@
+@use "/src/scss/colors";
+
+.tag {
+  padding: 0 10px;
+  background-color: colors.$borders;
+  border-radius: 6px;
+}
+
+.placeholder {
+  color: #909eab;
+  font-weight: 400;
+}
+
+.multipleAutocompleteTags {
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 4px;
+  color: #000;
+  background-color: #c0c0c039;
+
+  .value {
+    margin-right: 4px;
+  }
+}
+
+.valuesWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.dialog {
+  width: 350px;
+  height: 260px;
+  padding: 20px;
+  z-index: 666;
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .dialog_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .color_picker {
+    width: 90px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon_picker {
+    width: 90px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form_control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 10px;
+  }
+  .input_control {
+    width: 140px;
+    min-height: 30px;
+    margin: 0 10px 5px;
+
+    &:nth-child(2) {
+      margin-right: 20px;
+    }
+  }
+  .submit_btn {
+    width: 120px;
+    height: 34px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+}
+.btn_loader {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}

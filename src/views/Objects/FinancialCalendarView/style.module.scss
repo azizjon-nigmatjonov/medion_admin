@@ -1,0 +1,220 @@
+.financial_view {
+  overflow: auto;
+  background-color: #fff;
+  height: calc(100vh - 103px);
+  position: relative;
+}
+
+.datesRow {
+  display: flex;
+  border-bottom: 1px solid #e5e9eb;
+  min-width: 1100px;
+
+  .monthBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    border-left: none;
+    margin: -1px -1px 0 0;
+    max-width: 400px;
+    min-width: 140px;
+
+    .monthText {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      font-weight: 700;
+      justify-content: flex-end;
+    }
+  }
+  .totalBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 32px;
+    border-left: none;
+    margin: -1px -1px 0 0;
+    max-width: 400px;
+    min-width: 80px;
+
+    .totalText {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 900;
+      justify-content: flex-end;
+    }
+  }
+
+  .mockBlock {
+    width: 390px;
+    min-width: 380px;
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+  }
+}
+
+.row_element {
+  .row_element_item {
+    width: 250px;
+    min-width: 250px;
+    padding: 5px;
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    border-right: 1px solid #e5e9eb;
+    border-bottom: 1px solid #e5e9eb;
+    display: flex;
+    align-items: center;
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+    span {
+      margin-left: 12px;
+    }
+  }
+}
+
+.recursiveBlock {
+  min-width: 1200px;
+  box-shadow: inset 0px -1px 0px #e5e9eb;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.recursiveChildBlock {
+  min-width: 1200px;
+  border-top: 1px dashed #eee;
+  border-bottom: 1px dashed #eee;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.finance_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 0;
+  width: 150px;
+  text-align: center;
+}
+.title {
+  width: 360px;
+  min-width: 375px;
+  overflow: hidden;
+  position: sticky;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  left: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+.title_item {
+  width: 340px;
+  min-width: 340px;
+  overflow: hidden;
+  position: sticky;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  left: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+.priceBlock {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 0;
+  min-width: 80px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.percentBlock {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 15px;
+  min-width: 50px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.priceBlockChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 0;
+  min-width: 80px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.joinedPriceBlockChild {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 0;
+  min-width: 160px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.percentBlockChilde {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 32px;
+  border-left: none;
+  margin: -1px -1px 0 15px;
+  min-width: 50px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.switchIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.parentElement {
+  font-size: 15px;
+  font-weight: 700;
+}
+.childElement {
+  border-top: 1px dashed #eee;
+}
+.line {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.addIcon {
+  background: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+}

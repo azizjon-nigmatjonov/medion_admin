@@ -1,0 +1,88 @@
+.settingsBlock {
+  width: 450px;
+  min-width: 450px;
+  background-color: #fff;
+  border-left: 1px solid #e5e9eb;
+
+  .settingsBlockHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    padding: 0 16px;
+    border-bottom: 1px solid #e5e9eb;
+    border-top: 1px solid #e5e9eb;
+    // background-color: #f6f8f9;
+  }
+
+  .settingsBlockBody {
+    height: calc(100vh - 56px - 56px - 48px);
+    overflow: auto;
+  }
+
+  .settingsFooter {
+    padding: 8px;
+    position: sticky;
+    bottom: 0;
+    background-color: #fff;
+  }
+}
+
+.actionSettings {
+  h2 {
+    margin: 10px 0;
+  }
+}
+.settingsBlockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 0px;
+}
+
+.summaryButton {
+  display: flex;
+  margin-top: 8px;
+
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px dashed #6e8bb780;
+    padding: 8px 16px;
+    flex-grow: 1;
+  }
+}
+.actionSettingBlock {
+  display: flex;
+  flex-direction: column;
+}
+.tablelayer {
+  margin: 5px 0;
+}
+.tableType {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px 0;
+  width: 320px;
+}
+.tableType_select {
+  width: 220px;
+  margin-left: 30px;
+}
+
+.deleteBtn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.tableActions {
+  border: 1px solid #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  position: relative;
+}

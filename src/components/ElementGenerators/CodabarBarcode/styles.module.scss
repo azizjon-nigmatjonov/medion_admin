@@ -1,0 +1,84 @@
+.barcode_input {
+    background: rgba(192, 192, 192, 0.224);
+    width: 244px;
+    height: 35px;
+    padding: 8.5px 14px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin: 0 0 10px 0;
+    &:focus {
+      outline: none;
+    }
+  }
+  .barcode_layer {
+    position: relative;
+  
+    .barcode_generate {
+      position: absolute;
+      top: -25px;
+      right: 0px;
+      background: none;
+      border: none;
+      font-size: 13px;
+      color: #1990ff;
+      cursor: pointer;
+    }
+  }
+  @media print {
+    .myDivToPrint {
+      display: none !important;
+    }
+  }
+  .input_control {
+    max-width: 340px;
+    position: relative;
+    margin-right: 10px;
+    .barcode_print {
+      position: absolute;
+      top: 10px;
+      right: -25px;
+      background: none;
+      border: none;
+      font-size: 13px;
+      color: #1990ff;
+      cursor: pointer;
+      margin-right: 0px;
+    }
+  }
+  .barcode_count {
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    position: relative;
+  
+    .cancel_btn {
+      position: absolute;
+      right: 15px;
+      background: none;
+      border: none;
+    }
+  
+    .count_control {
+      width: 155px;
+      height: 25px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 4px;
+      margin: 5px 0 0 0;
+      margin-right: auto;
+      &:focus {
+        outline: none;
+      }
+    }
+    .barcode_print {
+      position: absolute;
+      right: 0px;
+      height: 25px;
+      top: 34px;
+    }
+    .barcode_input_layer {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+  }

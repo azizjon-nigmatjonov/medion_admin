@@ -1,0 +1,16 @@
+.relationTable {
+  display: flex;
+
+  .filtersBlock {
+    padding: 12px;
+    border-right: 1px solid #E5E9EB;
+    width: 210px;
+  }
+
+  .tableBlock {
+    padding: 12px;
+    flex: 1;
+    overflow: auto;
+
+  }
+}

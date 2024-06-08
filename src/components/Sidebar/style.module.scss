@@ -1,0 +1,250 @@
+@use "/src/scss/colors";
+
+.sidebar {
+  display: flex;
+}
+
+.leftSide {
+  width: 56px;
+  box-shadow: inset -1px 0px 0px rgba(229, 233, 235, 0.75);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    box-shadow: inset 0 -1px #e5e9eb;
+
+    .logo {
+      cursor: pointer;
+      width: 35px;
+    }
+  }
+
+  .scrollBlock {
+    height: calc(100vh - 56px);
+    overflow: auto;
+  }
+
+  .menuItemsBlock {
+    flex: 1;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    min-height: calc(100vh - 200px);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .menuItem {
+    min-height: 36px;
+    min-width: 36px;
+    border-radius: 6px;
+    color: colors.$grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      background-color: colors.$primary;
+    }
+  }
+}
+
+.rightSide {
+  width: 240px;
+  box-shadow: inset -1px 0px 0px rgba(229, 233, 235, 0.75);
+
+  .header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+
+    .title {
+      flex: 1;
+    }
+
+    .closeButton {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #6e8bb71a;
+      border-radius: 6px;
+      transition-duration: 0.1s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: colors.$primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .menuItemsBlock {
+    height: calc(100vh - 56px);
+    padding: 10px;
+    gap: 5px;
+
+    .menuItem {
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      color: colors.$grey;
+      cursor: pointer;
+      display: block;
+
+      &.active {
+        color: #fff;
+        background-color: colors.$primary;
+      }
+    }
+  }
+}
+
+// Visible
+
+.leftSide_open {
+  width: 250px;
+  box-shadow: inset -1px 0px 0px rgba(229, 233, 235, 0.75);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+
+  .closeBtn {
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .headerLogo {
+    display: flex;
+    align-items: center;
+    h2 {
+      color: rgb(55, 71, 91);
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    height: 50px;
+    box-shadow: inset 0 -1px #e5e9eb;
+
+    .logo {
+      cursor: pointer;
+      width: 35px;
+    }
+  }
+
+  .scrollBlock {
+    height: calc(100vh - 56px);
+    overflow: auto;
+  }
+
+  .menuItemsBlock {
+    flex: 1;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    padding: 10px;
+    gap: 5px;
+    min-height: calc(100vh - 200px);
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .menuItem {
+    min-height: 36px;
+    min-width: 36px;
+    border-radius: 6px;
+    color: colors.$grey;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    // justify-content: center;
+    cursor: pointer;
+
+    &.active {
+      color: #fff;
+      background-color: colors.$primary;
+    }
+  }
+
+  .navLinkOpen {
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+
+.noficationButton {
+  position: relative;
+
+  .notificationNum {
+    position: absolute;
+    right: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    top: -5px;
+  }
+}
+.noficationButtons {
+  position: relative;
+
+  .notificationNums {
+    position: absolute;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    top: -5px;
+  }
+}

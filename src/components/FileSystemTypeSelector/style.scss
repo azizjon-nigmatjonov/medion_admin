@@ -1,0 +1,32 @@
+
+
+.FileSystemTypeSelector {
+
+  padding: 4px;
+  background-color: #F6F8F9;
+  border: 1px solid #E5E9EB;
+  border-radius: 6px;
+  display: flex;
+  gap: 4px;
+
+  .btn {
+    color: #6E7C87;
+    padding: 4px 18px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .icon {
+      margin-right: 10px;
+      font-size: 15px;
+    }
+
+    &.active {
+      color: #fff;
+      background-color: #0067F4;
+    }
+  }
+
+
+}

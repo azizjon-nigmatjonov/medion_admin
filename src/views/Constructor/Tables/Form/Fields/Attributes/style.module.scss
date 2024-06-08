@@ -1,0 +1,41 @@
+.settingsBlockHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid #e5e9eb;
+  border-top: 1px solid #e5e9eb;
+  background-color: #f6f8f9;
+}
+
+.summaryButton {
+  display: flex;
+  margin-top: 8px;
+
+  button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px dashed #6e8bb780;
+    padding: 8px 16px;
+    flex-grow: 1;
+  }
+}
+
+.filtersBody {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .filtersBodyItem {
+    width: 45%;
+    margin: 5px;
+  }
+  .filtersBodyItemMain {
+    width: 70%;
+    margin: 5px;
+  }
+}

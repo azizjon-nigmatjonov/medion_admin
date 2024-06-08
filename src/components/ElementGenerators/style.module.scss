@@ -1,0 +1,493 @@
+@use "/src/scss/colors";
+
+.autocompleteWrapper {
+  position: relative;
+
+  .createButton {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #1990ff;
+    cursor: pointer;
+    // background-color: #c0c0c039;
+  }
+}
+
+.multipleAutocompleteTags {
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  border-radius: 4px;
+  color: #000;
+  background-color: rgba(192, 192, 192, 0.224);
+
+  .value {
+    margin-right: 4px;
+  }
+}
+
+.valuesWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.barcode_input {
+  background: rgba(192, 192, 192, 0.224);
+  width: 244px;
+  height: 35px;
+  padding: 8.5px 14px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin: 0 0 10px 0;
+  &:focus {
+    outline: none;
+  }
+}
+.barcode_layer {
+  position: relative;
+
+  .barcode_generate {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #1990ff;
+    cursor: pointer;
+  }
+}
+@media print {
+  .myDivToPrint {
+    display: none !important;
+  }
+}
+.input_control {
+  max-width: 340px;
+  position: relative;
+  margin-right: 10px;
+  .barcode_print {
+    position: absolute;
+    top: 10px;
+    right: -25px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #1990ff;
+    cursor: pointer;
+    margin-right: 0px;
+  }
+}
+.barcode_count {
+  width: 250px;
+  height: 100px;
+  padding: 15px;
+  position: relative;
+
+  .cancel_btn {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+  }
+
+  .count_control {
+    width: 155px;
+    height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 5px 0 0 0;
+    margin-right: auto;
+    &:focus {
+      outline: none;
+    }
+  }
+  .barcode_print {
+    position: absolute;
+    right: 0px;
+    height: 25px;
+    top: 34px;
+  }
+  .barcode_input_layer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+.custom_textfield div fieldset {
+  border: none;
+}
+
+// Cascading
+.cascading {
+  .css-1jjkm6i-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    display: none;
+  }
+}
+.inputControl {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background: none;
+  padding: 5px;
+}
+
+.cascading_item {
+  width: 100%;
+  border-radius: 4px;
+  transition: width 10s ease-in-out;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cascading_head {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px 8px 16px;
+    background: #ffffff;
+    box-shadow: inset 0px -1px 0px #e5e9eb;
+
+    .cascading_head_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .head_title {
+      font-size: 14px;
+      line-height: 24px;
+      margin-left: 16px;
+      font-weight: 700;
+      color: #000;
+      width: 222px;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none !important;
+      }
+
+      span {
+        display: block;
+        width: 330px;
+      }
+    }
+  }
+
+  .back_icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+.cascading_search {
+  height: 56px;
+  padding: 8px 12px 8px 16px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px #e5e9eb;
+
+  .cascading_search_input {
+    height: 40px;
+    width: 100%;
+    padding: 6px 8px;
+    background: #f6f7f9;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding-left: 50px;
+  }
+  .search_icon {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.cascading_items {
+  min-height: 45px;
+  padding: 8px 12px 8px 16px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: inset 0px -1px 0px #e5e9eb;
+  cursor: pointer;
+
+  p {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 100%;
+    font-size: 13px;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+    }
+  }
+}
+.cancel_icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+.search_items {
+  height: 100%;
+  overflow: auto;
+  padding: 10px 0 0px 0;
+  border-radius: 10px;
+
+  p {
+    max-height: 50px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #869bb9;
+    border-radius: 10px;
+  }
+}
+.input_layer {
+  position: relative;
+
+  &:hover {
+    .clear_icon {
+      display: block;
+    }
+  }
+}
+.clear_icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.barcodes_print {
+  display: none;
+}
+.input_layer {
+  position: relative;
+}
+.input_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30px;
+  margin-right: 20px;
+}
+.confirm_button {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 60px;
+  height: 40px;
+  border: none;
+  background: none;
+  color: #385d92;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.multiLine {
+  display: none;
+}
+
+//
+.dentist {
+  padding: 24px 20px;
+  height: 495px;
+  ::-webkit-scrollbar {
+    display: none !important;
+  }
+  .dentistHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin-bottom: 16px;
+    .dentistTitle {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #1a2024;
+    }
+    .clearBtn {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .dentistContent {
+    height: 167px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+    gap: 4px;
+
+    .dentistContentItem {
+      width: 70px;
+      height: 167.37px;
+      background: #fafafa;
+      border: 1px solid #e9e9e9;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 16px 0 0 0;
+
+      &:hover {
+        background: rgba(14, 115, 246, 0.2);
+        border: 1px solid rgba(14, 115, 246, 0.27);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .teethImg {
+        max-width: 45px;
+        min-width: 23px;
+        min-height: 69px;
+        max-height: 106px;
+      }
+      .teethNumber {
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+  .dentistContentChild {
+    height: 167px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(82px, 1fr));
+    gap: 6px;
+
+    .dentistContentItemChild {
+      width: 72px;
+      height: 167.37px;
+      background: #fafafa;
+      border: 1px solid #e9e9e9;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 16px 0 0 0;
+
+      &:hover {
+        background: rgba(14, 115, 246, 0.2);
+        border: 1px solid rgba(14, 115, 246, 0.27);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .teethImg {
+        max-width: 45px;
+        min-width: 23px;
+        min-height: 69px;
+        max-height: 106px;
+      }
+      .teethNumber {
+        margin-top: 12px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+  .controlBtns {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+
+    button {
+      width: 107px;
+      height: 40px;
+      border-radius: 6px;
+      border: none;
+      margin-left: 10px;
+    }
+    .cancelBtn {
+      background: #ffffff;
+      border: 1px solid #dde2e4;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .updateBtn {
+      background: #0e73f6;
+      border-radius: 6px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+  .switchBtn {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+  }
+}
+
+.verticalDrawer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    box-shadow: inset 0px -1px 0px #eeeeee;
+
+    .title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+
+    .closeIcon {
+      font-size: 28px;
+    }
+  }
+
+  .body {
+    padding: 16px;
+    flex: 1;
+    overflow: auto;
+  }
+
+  .footer {
+    padding: 16px;
+
+    .button {
+      width: 100%;
+    }
+  }
+}

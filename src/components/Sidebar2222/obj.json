@@ -1,0 +1,289 @@
+{
+  "isAuth": true,
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfcGxhdGZvcm1faWQiOiIzZjYzMjBhNi1iNmVkLTRmNWYtYWQ5MC0xNGExNTRjOTVlZDMiLCJjbGllbnRfdHlwZV9pZCI6IjJlZmUwMzU5LTFjMmUtNDliYi05ZDdmLTcxYWU1OWI4ZDczOCIsImRhdGEiOiJhZGRpdGlvbmFsIGpzb24gZGF0YSIsImV4cCI6MTY4NTU5NzIzMSwiaWF0IjoxNjg1NTEwODMxLCJpZCI6IjQ1ODkxMDU0LWQ0MTMtNDI4My04ZjU4LTU2NzYzYzFjNzU1ZSIsImlwIjoiYWRkaXRpb25hbCBqc29uIGRhdGEiLCJsb2dpbl90YWJsZV9zbHVnIjoiZG9jdG9ycyIsInByb2plY3RfaWQiOiI4MGNjMTFkOS0yZWU2LTQ5NGEtYTA5ZC00MDE1MGQxNTExNDUiLCJyb2xlX2lkIjoiNTBjNWUyNzktYzVhYi00ODg1LTlhYzYtYjU0YWZlYjhlMmJlIiwidGFibGVzIjpbeyJ0YWJsZV9zbHVnIjoiYnJhbmNoZXMiLCJvYmplY3RfaWQiOiIyZjhkMjg1MS1jN2U3LTQ2ZGYtODY5Ni02ZTdmZWU2NGY5OTIifV0sInVzZXJfaWQiOiJhZTBiYzE5ZC00OTM0LTQxMmMtYjFmZC0xNGIwZTY3NDA3OGEifQ.rCT2mzvpTpDQEygQZqqeN8e_0BnB3nZXSuQCwAqkhck",
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfcGxhdGZvcm1faWQiOiIzZjYzMjBhNi1iNmVkLTRmNWYtYWQ5MC0xNGExNTRjOTVlZDMiLCJjbGllbnRfdHlwZV9pZCI6IjJlZmUwMzU5LTFjMmUtNDliYi05ZDdmLTcxYWU1OWI4ZDczOCIsImRhdGEiOiJhZGRpdGlvbmFsIGpzb24gZGF0YSIsImV4cCI6MTY4ODEwMjgzMSwiaWF0IjoxNjg1NTEwODMxLCJpZCI6IjQ1ODkxMDU0LWQ0MTMtNDI4My04ZjU4LTU2NzYzYzFjNzU1ZSIsImlwIjoiYWRkaXRpb25hbCBqc29uIGRhdGEiLCJsb2dpbl90YWJsZV9zbHVnIjoiZG9jdG9ycyIsInByb2plY3RfaWQiOiI4MGNjMTFkOS0yZWU2LTQ5NGEtYTA5ZC00MDE1MGQxNTExNDUiLCJyb2xlX2lkIjoiNTBjNWUyNzktYzVhYi00ODg1LTlhYzYtYjU0YWZlYjhlMmJlIiwidGFibGVzIjpbeyJ0YWJsZV9zbHVnIjoiYnJhbmNoZXMiLCJvYmplY3RfaWQiOiIyZjhkMjg1MS1jN2U3LTQ2ZGYtODY5Ni02ZTdmZWU2NGY5OTIifV0sInVzZXJfaWQiOiJhZTBiYzE5ZC00OTM0LTQxMmMtYjFmZC0xNGIwZTY3NDA3OGEifQ.bOiKg7ihRibSgWhnaVvZPqdJBIrtVSKU24ZgwoewXqc",
+  "userInfo": {
+    "id": "ae0bc19d-4934-412c-b1fd-14b0e674078a",
+    "client_type_id": "2efe0359-1c2e-49bb-9d7f-71ae59b8d738",
+    "role_id": "50c5e279-c5ab-4885-9ac6-b54afeb8e2be",
+    "phone": "(94) 678-66-46",
+    "email": "ahidoyatov@gmail.com",
+    "login": "abdullokh",
+    "name": "Abdullokh"
+  },
+  "roleInfo": {
+    "id": "50c5e279-c5ab-4885-9ac6-b54afeb8e2be",
+    "client_type_id": "2efe0359-1c2e-49bb-9d7f-71ae59b8d738",
+    "name": "DEFAULT DOCTOR",
+    "client_platform_id": "3f6320a6-b6ed-4f5f-ad90-14a154c95ed3",
+    "project_id": "80cc11d9-2ee6-494a-a09d-40150d151145"
+  },
+  "permissions": {
+    "accounts": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "cashbox": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "branches": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "transactions": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "visit_services": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "bookings": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "services": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "doctors": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "doctor_working_days": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "cabinets": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "specialities": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "patients": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "categories": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "employee_category": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "doctors_salary": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "patient_bills": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "billz_services": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "patient_payments": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "payment_transactions": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "doctors_salaries": {
+      "read": true,
+      "write": false,
+      "update": false,
+      "delete": false
+    },
+    "doctor_test": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "specialization_test": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "visits_test": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "file": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "template": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "branch_test": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "editable_table": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "languages_rating": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": true
+    },
+    "movies": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "countries": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "genres": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "staffs": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "tags": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "filmcategories": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "test_barcode_table": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "test_for_barcode_field": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "test_excel": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "test_field_permisision": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "test_field_permission": {
+      "read": true,
+      "write": true,
+      "update": false,
+      "delete": false
+    },
+    "unread": {
+      "read": true,
+      "write": true,
+      "update": true,
+      "delete": false
+    }
+  },
+  "loginTableSlug": "doctors",
+  "userId": "ae0bc19d-4934-412c-b1fd-14b0e674078a",
+  "tables": [
+    {
+      "table_slug": "branches",
+      "object_id": "2f8d2851-c7e7-46df-8696-6e7fee64f992"
+    }
+  ],
+  "clientType": {
+    "id": "2efe0359-1c2e-49bb-9d7f-71ae59b8d738",
+    "name": "DOCTOR",
+    "confirm_by": 1,
+    "self_register": true,
+    "self_recover": true,
+    "project_id": "80cc11d9-2ee6-494a-a09d-40150d151145",
+    "tables": [
+      {
+        "view_slug": "name"
+      }
+    ]
+  },
+  "loading": false,
+  "_persist": {
+    "version": -1,
+    "rehydrated": true
+  }
+}

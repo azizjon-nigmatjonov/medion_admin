@@ -1,0 +1,39 @@
+
+
+
+.SubtaskTypeSelect {
+  font-weight: bold;
+  background-color: #FFC107;
+  width: 80px !important;
+  
+
+  .MuiSelect-select {
+    padding-top: 4px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .MuiSelect-nativeInput {
+    display: none;
+  }
+
+  .asd {
+    font-size: 30px;
+  }
+
+
+  .Mui-disabled {
+    color: #000 !important;
+    -webkit-text-fill-color: #000;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  &.disabled {
+    .MuiSelect-icon {
+      display: none;
+    }
+  }
+  
+}

@@ -1,0 +1,33 @@
+
+
+.StatusSelect {
+  width: 170px;
+  font-weight: bold;
+  background-color: #1890FF;
+  color: #fff !important;
+
+
+  .Mui-disabled {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff;
+  }
+
+  .MuiSelect-icon {
+    color: #fff;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  .option {
+    background-color: red;
+  }
+
+  &.disabled {
+    .MuiSelect-icon {
+      display: none;
+    }
+  }
+
+}

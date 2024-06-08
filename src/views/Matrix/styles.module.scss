@@ -1,0 +1,257 @@
+.table_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  .table_btn_icon {
+    padding: 9.5px;
+    border: 1px solid #e5e9eb;
+    border-radius: 50%;
+  }
+  .table_btn_edit {
+    display: block;
+    &:hover {
+      display: none;
+    }
+  }
+}
+
+.detail_holder {
+  margin: 8px;
+  > div {
+    margin-bottom: 8px;
+  }
+  .info_card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .login_card {
+    .add_login_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      width: 100%;
+      background-color: #fff;
+      color: #0e73f6;
+      border: 1px dashed rgba(110, 139, 183, 0.5);
+      border-radius: 6px;
+      padding: 8px;
+      cursor: pointer;
+    }
+    .create_client {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4px;
+      width: 100%;
+      background-color: #fff;
+      color: #0e73f6;
+
+      button {
+        padding: 8px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .login_cancel_btn {
+        background-color: #fff;
+        color: rgb(255, 33, 33);
+        border: 1px solid #e5e9eb;
+      }
+      .login_create_btn {
+        background-color: #0e73f6;
+        color: #fff;
+        border: 1px solid #0e73f6;
+      }
+    }
+  }
+}
+
+.card_holder {
+  border: 1px solid #e5e9eb;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  .card_header {
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e9eb;
+    .card_header_title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .card_header_left {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      white-space: nowrap;
+    }
+    .card_header_right {
+      cursor: pointer;
+      border: 1px solid #e5e9eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .action_btns {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  .card_body {
+    .card_body_head {
+      display: flex;
+      align-items: center;
+      padding: 12px 8px;
+      border-bottom: 1px solid #e5e9eb;
+      > div {
+        flex-basis: 50%;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+    .card_body_items {
+      display: flex;
+      align-items: flex-end;
+      gap: 6px;
+      padding: 12px 8px;
+      .card_body_item {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+
+        .card_body_item_inner {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  // margin-bottom: 16px;
+
+  > button {
+    flex-basis: 50%;
+    justify-content: center;
+    border: 1px solid #e5e9eb;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .cancel_btn {
+    background-color: #fff;
+    color: rgb(255, 33, 33);
+    border: 1px solid #e5e9eb;
+  }
+  .craete_btn {
+    background-color: #0e73f6;
+    color: #fff;
+    border: 1px solid #0e73f6;
+  }
+}
+
+.app_child_title {
+  margin-left: 20px;
+}
+.app_permission_popup {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 6px;
+  span:first-child {
+    margin-right: 10px;
+  }
+}
+.child_permission_popup {
+  display: "flex";
+  align-items: "center";
+  gap: "8px";
+  background-color: "white";
+  border: "1px solid #eee";
+  padding: "12px 16px";
+  border-radius: "6px";
+  position: "absolute";
+  top: "40px";
+  left: "30px";
+  z-index: "2";
+  box-shadow: "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px";
+}
+
+.role_add_block {
+  padding: 16px;
+  .action {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .role_add_btn {
+    width: 100%;
+    background-color: #fff;
+    border: 1px dashed #e3e3e3;
+    color: rgb(14, 115, 246);
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      border-color: #0e73f6;
+    }
+  }
+  .disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+}
+
+.fieldPermissionBox {
+  max-height: 90vh;
+  outline: none;
+  background: #fff;
+  width: 80%;
+  border-radius: 6px;
+  padding: 8px;
+  overflow-y: auto;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 700;
+    }
+  }
+  .submit_btn {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// View Permission
+// .viewPermissionBox {
+
+// }

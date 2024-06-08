@@ -1,0 +1,22 @@
+
+
+.footer {
+
+  height: 56px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  // margin-top: 56px;
+  box-shadow: inset 0px 1px 0px #E5E9EB;
+  padding: 0 16px;
+
+
+  .extra {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,50 @@
+
+
+ .receipt {
+  width: 330px;
+  background-color: #fff;
+  position: relative;
+  transform: translateY(10px);
+  padding: 16px;
+  color: #6F6F6F;
+  position: sticky;
+  top: 0;
+
+  .border {
+    position: absolute;
+    top: -17px;
+    left: 0;
+  }
+
+  .borderBottom {
+    position: absolute;
+    bottom: -17px;
+    transform: rotate(180deg);
+    left: 0;
+  }
+
+  .logoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #F9F9F9;
+    border-radius: 16px;
+  }
+
+  .divider {
+    margin: 15px 0;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    .dashed {
+      flex: 1;
+      border-bottom: 1px dashed #6F6F6F;
+      margin: 20px;
+    }
+  }
+
+}

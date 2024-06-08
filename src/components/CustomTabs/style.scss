@@ -1,0 +1,24 @@
+.customTabWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  .customTabDetails {
+    // font-medium text-base relative cursor-pointer
+    font-size: 14px;
+    font-weight: 500;
+    color: #2b2b2b;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    .customTabIndicator {
+      // inline-block absolute h-1 w-full top-9 left-0 bg-primary-600
+      display: inline-block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      top: 36px;
+      left: 0;
+      background-color: #1890ff;
+    }
+  }
+}

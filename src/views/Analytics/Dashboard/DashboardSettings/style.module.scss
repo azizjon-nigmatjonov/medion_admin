@@ -1,0 +1,35 @@
+
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+}
+
+.formCard {
+  width: 100%;
+
+  .title {
+    padding: 16px 12px; 
+  }
+
+  .mainBlock {
+    width: 100%;
+    height: calc(100vh - 260px);
+    overflow: auto;
+    padding: 16px;
+    
+    
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+
+      .element {
+        flex: 1;
+      }
+    }
+  }
+}

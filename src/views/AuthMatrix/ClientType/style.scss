@@ -1,0 +1,88 @@
+
+.ClientType {
+  
+  .main-area {
+    display: flex;
+    padding: 20px;
+
+    // .section {
+    //   flex: 1;
+    //   background-color: #fff;
+    //   overflow: auto;
+      
+    //   .header {
+    //     padding: 10px 20px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: space-between;
+    //   }
+    // }
+
+    // .section + .section {
+    //   box-shadow: inset 1px 0px 0px #e5e9eb;
+    // }
+  }
+
+  .card {
+    flex: 2;
+    background-color: #fff;
+    height: calc(100vh - 96px - 56px);
+    overflow-y: scroll;
+
+    .card-header {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .card-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .form-row {
+    margin-bottom: 20px;
+  }
+
+  .drag-border {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f1;
+  }
+
+  .row {
+    // min-height: 64px;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    &.active {
+      background-color: #0166f3;
+      color: #fff;
+    }
+
+    &-index {
+      padding: 0 10px;
+    }
+
+    &-label {
+      flex: 1;
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+
+}

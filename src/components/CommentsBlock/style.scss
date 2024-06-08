@@ -1,0 +1,72 @@
+
+
+.CommentsBlock {
+
+  .messages-area {
+    background-color: #e5e9eb62;
+    min-height: calc(100vh - 455px);
+    padding: 16px;
+  }
+}
+
+.MessageForm {
+  padding: 16px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #e5e9eb62;
+
+  .text-input {
+    margin: 0 10px;
+  }
+}
+
+.Comment {
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 70%;
+
+  &.active {
+    background-color: #759effc2 !important;
+  }
+
+  &.own-comment {
+    margin-left: auto;
+    background-color: #aac4ff62;
+  }
+
+  .comment-block {
+    padding-left: 12px;
+    flex: 1;
+    
+    .username {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+
+    .date {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 8px;
+      color: #6E7C87;
+    }
+
+    .text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+  }
+
+
+
+}

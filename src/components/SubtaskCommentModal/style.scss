@@ -1,0 +1,24 @@
+
+
+.SubtaskCommentModal {
+  min-width: 500px;
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .form {
+    padding: 15px;
+
+    .btns-row {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}

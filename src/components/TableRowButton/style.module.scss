@@ -1,0 +1,26 @@
+@use "/src/scss/colors";
+
+.createButton {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px dashed rgba(110, 139, 183, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  &:hover {
+    border-color: colors.$primary;
+  }
+
+  p {
+    color: colors.$primary;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    &.cancel{
+      color: colors.$error;
+    }
+  }
+
+}

@@ -1,0 +1,52 @@
+
+
+.RectangleIconButton {
+  border: 1px solid #E5E9EB;
+  border-radius: 4px;
+  min-width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .2s;
+
+  &.long {
+    gap: 8px;
+    padding: 0 8px;
+  }
+
+  &.grey {
+    border-color: #E5E9EB;
+    background: #F6F8F9;
+  }
+
+  &:hover {
+    border-color: #0067F4;
+  } 
+  
+
+  &.error:hover {
+    border-color: #FF4842;
+  } 
+
+  &.warning:hover {
+    border-color: #FFC107;
+  } 
+
+  &.success:hover {
+    border-color: #1AC19D;
+  } 
+
+  &.white {
+    background-color: #fff;
+    color: #6E8BB7;
+
+    &:hover {
+      border-color: #6E8BB7;
+    }
+  }
+
+}

@@ -1,0 +1,60 @@
+.page {
+  height: calc(100vh - 112px);
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+
+  td,
+  th {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .iconBlock {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    margin: auto;
+    
+    svg {
+      width: 29px;
+    }
+  }
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.section {
+  flex: 1;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  padding: 16px;
+  
+
+  .label {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #818c99;
+    margin-bottom: 5px;
+  }
+
+  .value {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}

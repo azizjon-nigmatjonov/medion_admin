@@ -1,0 +1,64 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 0 50px;
+
+  .card {
+    width: calc(100vw - 100px);
+    padding: 32px;
+    border: none;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+
+      .cardTitle {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+
+      .closeIcon {
+        font-size: 28px;
+      }
+    }
+
+    .loader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px;
+    }
+
+    .body {
+      height: calc(100vh - 200px);
+      overflow: auto;
+      
+
+      .formWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        
+        &.oneColumn {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+    .footer {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      .button {
+        flex: 1;
+      }
+    }
+  }
+}

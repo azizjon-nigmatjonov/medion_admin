@@ -1,0 +1,103 @@
+.AuthMatrix {
+  .main-area {
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+
+    .matrix {
+      width: 100%;
+      height: calc(100vh - 56px - 80px);
+      display: grid;
+      border: 1px solid #E5E9EB;
+      border-radius: 8px;
+      overflow: auto;
+
+      .block {
+        border: 1px solid #E5E9EB;
+        width: 100%;
+        padding: 30px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+        padding-right: 0;
+        
+        &:hover {
+          background-color: rgba(145, 158, 171, 0.08);
+        }
+        
+        .title {
+          font-weight: 600;
+          white-space: nowrap;
+        }
+
+        .subtitle {
+          white-space: normal;
+        }
+
+      }
+
+      .empty {
+        z-index: 0;
+      }
+
+      .platform-block {
+        grid-row-start: 1;
+        background-color: #ebf7ff;
+        padding-right: 0;
+
+
+        &:hover {
+          background-color: #daeffc;
+        }
+      }
+
+      .type-block {
+        grid-column-start: 1;
+        background-color: #ebfff1;
+        padding-right: 0;
+
+
+        &:hover {
+          background-color: #dcfce5;
+        }
+      }
+
+      .create-block {
+
+        .icon {
+          font-size: 35px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+.PlatformModal, .TypeModal {
+  min-width: 500px;
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+
+  .form {
+    padding: 15px;
+
+    .btns-row {
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+  }
+}

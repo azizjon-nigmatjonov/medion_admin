@@ -1,0 +1,23 @@
+
+.CollapseIcon {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #E5E9EB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  cursor: pointer;
+  transition-duration: .4s;
+
+  &:hover {
+    border-color: #0067F4;
+  }
+
+
+  &.open {
+    transform: rotate(180deg);
+  }
+
+}

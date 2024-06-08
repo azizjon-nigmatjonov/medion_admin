@@ -1,0 +1,218 @@
+$main-color: #0365F2;
+
+.Sidebar {
+  // min-width: 280px;
+  width: 280px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid rgba(192, 192, 192, 0.562);
+  transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: .3s;
+  overflow-x: hidden;
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+    padding: 0 12px;
+    box-shadow: inset 0px -1px 0px #E5E9EB;
+
+
+    .brand {
+      display: flex;
+      align-items: center;
+      padding-left: 5px;
+
+      &-name {
+        color: #6b6966;
+        font-weight: bold;
+        margin-left: 15px;
+        opacity: 1;
+        transition-duration: 0.3s;
+        white-space: nowrap;
+      }
+
+      &-logo img {
+        min-width: 35px;
+        width: 35px;
+        cursor: pointer;
+      }
+
+    }
+    
+    .cloes-btn {
+      color: #6e8bb8;
+      cursor: pointer;
+    }
+  }
+
+  .nav-block {
+    padding: 12px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::-webkit-scrollbar-track {
+      background: #c0c0c01c;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background: #6e8bb77e;
+    }
+    
+    .sidebar-footer {
+      padding-top: 10px;
+      border-top: 1px solid rgba(192, 192, 192, 0.294);
+    }
+
+    .parent-block {
+      margin-bottom: 4px;
+
+      .nav-element {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-radius: 6px;
+        padding: 10px 12px;
+        color: #6e8bb7;
+        cursor: pointer;
+        min-height: 45px;
+        background-color: #6E8BB733;
+        
+
+        &:hover {
+          background-color: #6e8bb745;
+        }
+
+        &.active {
+          background-color: #0365F2 !important;
+          color: #fff;
+
+          .profile-avatar {
+            background-color: #fff;
+            color: #0365F2;
+          }
+        }
+
+        &.active-with-child {
+          color: #0365F2;
+        }
+
+        .icon {
+          margin-right: 13px;
+          display: flex;
+          align-items: center;
+        }
+
+        .profile-avatar {
+          width: 36px;
+          height: 36px;
+          min-width: 36px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          background-color: #71717A;
+          color: #fff;
+          margin-left: 6px;
+          margin-right: 13px;
+        }
+
+        .label {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px;
+          flex: 1;
+          white-space:nowrap;
+        }
+
+        .arrow-icon {
+          transition-duration: 0.3s;
+
+          &.open {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .child-block {
+        background-color: #6E8BB714;
+        border-radius: 0 0 6px 6px;
+        padding-top: 4px;
+        // margin-top: -2px;
+        // margin-left: 10px;
+
+        .nav-element {
+          margin-bottom: 10px;
+          display: flex;
+          background-color: transparent;
+        }
+
+        .child-element-dot {
+          width: 19px;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+        }
+
+        .label {
+          padding-left: 10px;
+          white-space: normal;
+        }
+        
+        &.opened {
+          // display: block;
+        }
+      }
+
+    }
+  }
+
+  &.right-side-closed {
+    // min-width: 72px;
+    width: 72px;
+
+    .header {
+
+      .brand-name {
+        opacity: 0;
+      }
+
+      .cloes-btn {
+        display: none;
+      }
+    }
+
+    .nav-block {
+      overflow-y: hidden;
+
+      .label {
+        display: none;
+      }
+      
+      .arrow-icon {
+        display: none;
+      }
+
+      .child-block {
+        display: none;
+      }
+
+    }
+  }
+
+
+}
+
+.ReactCollapse--collapse {
+  transition-property: height;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}

@@ -1,0 +1,79 @@
+
+.iconWrapper {
+    width: 35px;
+    height: 35px;
+    border: 1px solid silver;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    cursor: pointer;
+    color: #0067F4;
+
+    &.rectangle {
+      border-radius: 6px;
+      margin-top: 7px;
+    }
+
+    &.error {
+      border-color: red !important;
+    }
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+}
+
+
+.menuPaper {
+
+}
+
+.menuList {
+  padding: 10px;
+  width: 300px;
+}
+
+.iconsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.popupIconWrapper {
+  width: 30px;
+  height: 30px;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  cursor: pointer;
+  
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+// .popup {
+//   display: flex;
+//   padding: 10px;
+//   align-items: center;
+//   gap: 5px;
+
+//   .popupIconWrapper {
+    // width: 30px;
+    // height: 30px;
+    // border: 1px solid silver;
+    // display: flex;
+    // align-items: center;
+    // border-radius: 50%;
+    // justify-content: center;
+    // cursor: pointer;
+  
+//     &:hover {
+//       transform: scale(1.2);
+//     }
+//   }
+// }
